@@ -1,0 +1,46 @@
+Think it like this 
+
+we have some money and we have buy some things then what we will do is. Ask how much a thing costs and check the if we can pay or not and ask other how much it costs and check if you can afford and repeat until the money is finshed or you get what you want. Here checking if we can afford is 
+Reasoning and asking for the money is like using someone or something to get the information that we don't know for now we can call that as tool
+
+How ReAct agent works is. It has a brain mostly a LLM and it has tools for get context it doesn't know and the actions that is out of its scope 
+
+TEchincal Stuff:
+
+it uses it's brain to know what it has to do and if it wants any tools to use
+Then it will call the tools and get the data and again reason with and continue
+
+Representation:
+
+        ---------------------
+       |      brain          |_______________________
+        _____________________                       |
+                |                                   |
+      _____________________________                 |
+                                                    |
+    |                              |                |
+  tool1                        tool2 ....           |
+     |                             |                |
+     |                             |                |
+     -------------------------------------------------
+
+
+
+
+
+it iterates through this steps until it get the answer
+
+there several types of ReAct Agents but i Think them as 2 they are
+
+the agent that run tools sequentially
+then agent that run tools parallel
+
+
+The agent that run tools sequentially:
+  It is useful when there is dependence in between tasks or tools. Like there is task like we have to take all the mangers emails and check what they sent today. In this the we will have two tools like fetching their names from database and accessing their mail's 
+ in this we will call the the dabase tool and get their details and call the second tools with it. But we have to wait for the first tool to give some content so the second one can run 
+
+The agent that run tools parallel:
+ Sometime we don't need one tool to run first and get data and do the other we can do them both like updating the system and get the system specs
+
+There is another time of agent which is a hybrid which will do both of the tasks where some are dependent and some are indpendent 
