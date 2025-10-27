@@ -1,0 +1,10 @@
+what is the main difference between the LLM and Agent
+
+Bascially the LLM is the brain of the Agent
+
+The LLM is powerfull it can summarize your messages and give some code suggestions. It can explain about the code and take some code and can give suggestions. But your LLM can't take a problem and run and see if it working or not.If not It can't Run
+But Agent can do it using tools
+
+The LLM is powerful but adding tools to it make it more powerful
+
+There are so many types of Agents we can use them based on our requirements. The most popular is REACT Agent.
